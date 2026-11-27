@@ -1,4 +1,5 @@
 import pytest
+
 from calc.stats import mean
 
 
