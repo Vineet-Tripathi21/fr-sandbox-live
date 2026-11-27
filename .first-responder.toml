@@ -1,0 +1,6 @@
+# Commands First Responder may run for this repo. The agent can only pick a KEY
+# (test | lint | fix); it can never compose its own command line.
+[commands]
+test = "python -m pytest -q -x --no-header -p no:cacheprovider"
+lint = "ruff check --output-format=concise --no-cache ."
+fix  = "ruff check --fix --no-cache . && ruff format --no-cache ."
